@@ -1,0 +1,613 @@
+{
+	"info": {
+		"_postman_id": "1036f165-46bd-420e-93bf-3e4e2533b179",
+		"name": "FlaskTestRequests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Send JSON, Get JSON",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Nikhil Aggarwal\",\n    \"age\": 20,\n    \"id\": 1\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/getJSON",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"getJSON"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Nikhil Aggarwal",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "20",
+							"disabled": true
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "city",
+							"value": "Mountain View",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Send JSON, Get JSON",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Nikhil Aggarwal\",\n    \"age\": 20,\n    \"id\": 1\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/getJSON",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"getJSON"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Nikhil Aggarwal",
+									"disabled": true
+								},
+								{
+									"key": "age",
+									"value": "20",
+									"disabled": true
+								},
+								{
+									"key": "id",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "city",
+									"value": "Mountain View",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "82"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.7.3"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Jul 2021 18:43:38 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"age\": 20,\n    \"id\": 1,\n    \"name\": \"Nikhil Aggarwal\",\n    \"status\": \"SUCCESS\"\n}"
+				}
+			]
+		},
+		{
+			"name": "hello_world",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "hello_world",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "12"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.7.3"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Jul 2021 18:44:03 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "Hello World!"
+				}
+			]
+		},
+		{
+			"name": "sendFile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/nikhilaggarwal/Downloads/catMask.jpeg",
+							"disabled": true
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/nikhilaggarwal/Downloads/monaDog.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/sendFile",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"sendFile"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sendFile",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/nikhilaggarwal/Downloads/monaDog.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/sendFile",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"sendFile"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "71"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.7.3"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Jul 2021 05:15:14 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"path\": \"./userFiles/20210705191514.png\",\n    \"status\": \"SUCCESS\"\n}"
+				}
+			]
+		},
+		{
+			"name": "sendFile - Fail test",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"description": "no file selected for this test: should return failure message\n",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/sendFile",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"sendFile"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sendFile - Fail test",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"description": "no file selected for this test: should return failure message\n",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "file",
+									"description": "wrong file format. format not allowed. only .png files",
+									"type": "file",
+									"src": "/Users/nikhilaggarwal/Downloads/catMask.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:5000/sendFile",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"sendFile"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "88"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.7.3"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Jul 2021 05:15:35 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"path\": null,\n    \"status\": \"FAILURE\",\n    \"statusMessage\": \"Could not write file.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "listFiles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/listFiles",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"listFiles"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "listFiles",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/listFiles",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"listFiles"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "70"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.7.3"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Jul 2021 18:44:20 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"files\": [\n        \"20210705191514.png\"\n    ],\n    \"status\": \"SUCCESS\"\n}"
+				}
+			]
+		},
+		{
+			"name": "getFile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fileName\": \"20210705191514.png\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/getFile",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"getFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send file to S3 bucket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/sendS3File",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"sendS3File"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get file from S3 bucket",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fileName\": \"20210719135629.png\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/getS3File",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"getS3File"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list s3 files in bucket",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/listS3Files",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"listS3Files"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "predictImage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"type": "file",
+							"src": "/Users/nikhilaggarwal/Desktop/car.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/predictImage",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"predictImage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listPredictableImages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "getPredictableImage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "predictImageS3(send predicted image to S3 bucket)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/nikhilaggarwal/Desktop/plane.jpeg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/predictImageS3",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"predictImageS3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
