@@ -8,9 +8,9 @@
  The backend was written in Python with Flask and it would process the uploaded images through the YoloV5 model and return a modified image with the different objects identified in the image. 
         
 
-Server side backend code is in python_app folder
+Server side backend code is in `python_app` folder
 
-Front-end UI in material_app folder
+Front-end UI in `material_app` folder
 
 #  About Dori.AI
 DoriAI provides the PLATFORM to train and deploy models using given data to automate certain processes
